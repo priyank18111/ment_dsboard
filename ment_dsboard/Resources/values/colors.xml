@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2c3e50</color>
+    <color name="colorPrimaryDark">#1B3147</color>
+    <color name="colorAccent">#3498db</color>
+	<color name="lightRed">#F26A6A</color>
+	<color name="transparentRed">#FF7F7F</color>
+	<color name="backgroundCircleGrey">#ADADAD</color>
+	<color name="backgroundCircleRed">#FEF0F0</color>
+	<color name="lightBlue">#408CFF</color>
+	<color name="blue">#257CFF</color>
+	<color name="colorBlue">#1271ff</color>
+	<color name="transparentBlue">#ADD8E6</color>
+	<color name="backgroundCircleBlue">#EBF3FF</color>
+	<color name="white">#ffffff</color>
+	<color name="grey">#E4E4E4</color>
+	<color name="colorlightGrey">#dbdbdb</color>
+	<color name="lightGrey">#A6A6A6</color>
+	<color name="bacgroundWhite">#F9FBFF</color>
+	<color name="transparentWhite">#99ffffff</color>
+	<color name="blackColor">#515151</color>
+	<color name="yellow">#FFB800</color>
+	<color name="backgroundCircleYellow">#FFF8E5</color>
+	<color name="creamWhite">#f2f2f2</color>
+	<color name="backgroundGreen">#E5F8E5</color>
+	<color name="backgroundOrange">#FFF3E6</color>
+	<color name="sonicSilver">#7A7A7A</color>
+	<color name="green">#026D02</color>
+	<color name="orange">#FF8E0A</color>
+	<color name="internWhiteBackground">#e6f0ff</color>
+	<color name="colorGrey">#bebfbf</color>
+	<color name="interncardbackground2">#f9fbff</color>
+	<color name="interncardbackground">#e6f0ff</color>
+	<color name="interncardcolor">#1271FF</color>
+	<color name="crayola">#1271FF</color>
+	<color name="tartorange">#FF4949</color>
+	<color name="darkliver">#505050</color>
+	<color name="gray">#BEBFBF</color>
+	<color name="offwhite">#efefef</color>
+
+
+
+</resources>

@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+<RelativeLayout
+        android:layout_width="match_parent"
+
+    android:padding="@dimen/size25"
+    android:background="@color/interncardbackground2"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/Backimage"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        
+        android:layout_marginTop="@dimen/size10"
+        android:layout_below="@+id/Backimage"
+        android:layout_width="match_parent"
+        android:text="Internship Details"
+        android:textColor="@color/interncardcolor"
+        android:id="@+id/TitleText"
+        android:textStyle="bold"
+        android:textSize="@dimen/scale18"
+        android:layout_height="wrap_content"/>
+    <androidx.cardview.widget.CardView
+        android:outlineSpotShadowColor="@android:color/transparent"
+        android:layout_marginTop="@dimen/size40"
+        app:cardCornerRadius="@dimen/size13"
+        android:id="@+id/card1"
+        android:layout_below="@id/TitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="@dimen/size15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:contentDescription="@null"
+                android:id="@+id/trainingdurationicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/training_duration_icon"/>
+            <LinearLayout
+                android:layout_toRightOf="@+id/trainingdurationicon"
+                android:id="@+id/layoutduration"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_marginVertical="@dimen/size10"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Training Duration"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="From"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_marginTop="@dimen/size10"
+                            android:layout_width="wrap_content"
+                            android:text="To"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:text="18/01/2022"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_marginTop="@dimen/size10"
+                            android:layout_width="wrap_content"
+                            android:text="18/06/2022"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:outlineSpotShadowColor="@android:color/transparent"
+        app:cardCornerRadius="@dimen/size13"
+        android:layout_marginTop="15dp"
+        android:id="@+id/card2"
+        android:layout_below="@id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="@dimen/size15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:contentDescription="@null"
+                android:id="@+id/trainingdurationicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_domain"/>
+            <LinearLayout
+                android:layout_toRightOf="@+id/trainingdurationicon"
+                android:id="@+id/layoutduration"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginVertical="@dimen/size10"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Domain"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:text="PMO"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:outlineSpotShadowColor="@android:color/transparent"
+        app:cardCornerRadius="@dimen/size13"
+        android:layout_marginTop="15dp"
+        android:id="@+id/card3"
+        android:layout_below="@id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="@dimen/size15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:contentDescription="@null"
+                android:id="@+id/trainingdurationicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/subdomain"/>
+            <LinearLayout
+                android:layout_toRightOf="@+id/trainingdurationicon"
+                android:id="@+id/layoutduration"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginVertical="@dimen/size10"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Sub-Domain"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:text="Business Analyst"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:outlineSpotShadowColor="@android:color/transparent"
+        app:cardCornerRadius="@dimen/size13"
+        android:layout_marginTop="15dp"
+        android:id="@+id/card4"
+        android:layout_below="@id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="@dimen/size15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:contentDescription="@null"
+                android:id="@+id/trainingdurationicon"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/image2vector"/>
+            <LinearLayout
+                android:layout_toRightOf="@+id/trainingdurationicon"
+                android:id="@+id/layoutduration"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginVertical="@dimen/size10"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/InternTextView"
+                    android:layout_width="wrap_content"
+                    android:text="Interns"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_below="@id/trainingdurationicon"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/testrecycleview"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_height="150dp"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+</ScrollView>

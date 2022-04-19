@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:id="@+id/constraintLayout2"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/backgRound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:id="@+id/textviewitem1"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="i have to visit a family function"
+        />
+        <TextView
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#515151"
+            android:id="@+id/textviewitem2"
+            app:layout_constraintTop_toBottomOf="@id/textviewitem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wed,16 feb"
+        />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/textviewitem3"
+            android:textColor="#2B80FF"
+            app:layout_constraintTop_toBottomOf="@id/textviewitem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Half day"
+        />
+        <androidx.appcompat.widget.AppCompatButton
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Pending"
+            android:textColor="#FFCD4B"
+            android:background="@drawable/buttonstyle"
+            android:textSize="8sp"
+            android:id="@+id/textviewitem4"
+            android:layout_width="90dp"
+            android:layout_height="30dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/textviewitem5"
+            android:textSize="11sp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonstroke"
+            app:layout_constraintTop_toBottomOf="@id/textviewitem4"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:text="Revoke"
+            android:textColor="#4790FF"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

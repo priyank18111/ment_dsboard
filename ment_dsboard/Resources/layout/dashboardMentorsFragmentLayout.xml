@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:background="@color/bacgroundWhite">
+
+
+     
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewLeaveRequestMentors"
+            android:layout_width="170dp"
+            android:layout_height="130dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cardViewIntern"
+            app:layout_constraintBottom_toTopOf="@+id/cardViewLeaveStatus">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewLeaveRequestMentors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bluebackground"
+                android:layout_marginTop="14dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/textViewLeaveRequestMentors"/>
+
+            <TextView
+                android:id="@+id/textViewTotalLeaveRequestMentors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/lightBlue"
+                android:text="\25"
+                app:layout_constraintTop_toTopOf="@+id/progressBarLeaveRequestMentors"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewLeaveRequestMentors"
+                app:layout_constraintStart_toStartOf="@+id/progressBarLeaveRequestMentors"
+                app:layout_constraintEnd_toEndOf="@+id/progressBarLeaveRequestMentors"
+                android:layout_marginBottom="5dp"
+                    />
+
+            <ProgressBar
+                android:id="@+id/progressBarLeaveRequestMentors"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progress="25"
+                android:max="100"
+                android:progressDrawable="@drawable/progressbarblue"
+                app:layout_constraintTop_toTopOf="@+id/imageViewLeaveRequestMentors"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewLeaveRequestMentors"
+                app:layout_constraintStart_toStartOf="@+id/imageViewLeaveRequestMentors"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewLeaveRequestMentors"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/leaveRequest"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/blackColor"
+                android:id="@+id/textViewLeaveRequestMentors"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewLeaveRequestMentors"/>
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewIntern"
+            android:layout_width="170dp"
+            android:layout_height="130dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="12dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardViewLeaveRequestMentors"
+            app:layout_constraintBottom_toTopOf="@+id/cardViewLeaveStatus"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewIntern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_redbackground"
+                android:layout_marginTop="14dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/textViewIntern"/>
+
+            <TextView
+                android:id="@+id/textViewTotalIntern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/lightRed"
+                android:text="15"
+                app:layout_constraintTop_toTopOf="@+id/progressBarIntern"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewIntern"
+                app:layout_constraintStart_toStartOf="@+id/progressBarIntern"
+                app:layout_constraintEnd_toEndOf="@+id/progressBarIntern"
+                android:layout_marginBottom="5dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBarIntern"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progress="15"
+                android:max="100"
+                android:progressDrawable="@drawable/progressbarred"
+                app:layout_constraintTop_toTopOf="@+id/imageViewIntern"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewIntern"
+                app:layout_constraintStart_toStartOf="@+id/imageViewIntern"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewIntern"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/interns"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/blackColor"
+                android:id="@+id/textViewIntern"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageViewIntern"/>
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewLeaveStatusMentors"
+            android:layout_width="364dp"
+            android:layout_height="215dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardViewLeaveRequestMentors">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leave Status"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/blackColor"
+                android:id="@+id/textViewLeaveStatusMentors"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/pieChartLeaveStatusMentors"/>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChartLeaveStatusMentors"
+                android:layout_width="130dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLeaveStatusMentors"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+           
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/shape_circle_yellow"
+                    android:id="@+id/imagViewPendingRequestMentors"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toTopOf="@+id/textViewLeaveStatusMentors"
+                    app:layout_constraintStart_toEndOf="@+id/pieChartLeaveStatusMentors"
+                    app:layout_constraintBottom_toTopOf="@+id/imagViewRejectRequestMentors"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewPendingRequestMentors"/>
+
+                <TextView
+                    android:id="@+id/textViewTotalPendingRequestMentors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="05"
+                    android:textColor="@color/yellow"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="@+id/imagViewPendingRequestMentors"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagViewPendingRequestMentors"
+                    app:layout_constraintStart_toStartOf="@+id/imagViewPendingRequestMentors"
+                    app:layout_constraintEnd_toEndOf="@+id/imagViewPendingRequestMentors"/>
+
+
+            
+
+                <TextView
+                    android:id="@+id/textViewPendingRequestMentors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pendingRequest"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="@+id/imagViewPendingRequestMentors"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagViewPendingRequestMentors"
+                    app:layout_constraintStart_toEndOf="@+id/imagViewPendingRequestMentors"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+           
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/shape_cirle_red"
+                    android:id="@+id/imagViewRejectRequestMentors"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/imagViewPendingRequestMentors"
+                    app:layout_constraintStart_toEndOf="@+id/pieChartLeaveStatusMentors"
+                    app:layout_constraintBottom_toTopOf="@+id/imagViewAcceptedRequestMentors"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewRejectRequestMentors"/>
+
+                <TextView
+                    android:id="@+id/textViewTotalRejectRequestMentors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="08"
+                    android:textColor="@color/lightRed"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="@+id/imagViewRejectRequestMentors"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagViewRejectRequestMentors"
+                    app:layout_constraintStart_toStartOf="@+id/imagViewRejectRequestMentors"
+                    app:layout_constraintEnd_toEndOf="@+id/imagViewRejectRequestMentors"/>
+
+            
+
+                <TextView
+                    android:id="@+id/textViewRejectRequestMentors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rejectRequest"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="@+id/imagViewRejectRequestMentors"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagViewRejectRequestMentors"
+                    app:layout_constraintStart_toEndOf="@+id/imagViewRejectRequestMentors"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+     
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/shape_circle_green"
+                    android:id="@+id/imagViewAcceptedRequestMentors"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/imagViewRejectRequestMentors"
+                    app:layout_constraintStart_toEndOf="@+id/pieChartLeaveStatusMentors"
+                    app:layout_constraintBottom_toBottomOf="@+id/pieChartLeaveStatusMentors"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewAcceptedRequestMentors"/>
+                <TextView
+                    android:id="@+id/textViewTotalAcceptedRequestMentors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textColor="@color/green"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="@+id/imagViewAcceptedRequestMentors"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagViewAcceptedRequestMentors"
+                    app:layout_constraintStart_toStartOf="@+id/imagViewAcceptedRequestMentors"
+                    app:layout_constraintEnd_toEndOf="@+id/imagViewAcceptedRequestMentors"/>
+
+            
+                <TextView
+                    android:id="@+id/textViewAcceptedRequestMentors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acceptedRequest"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="@+id/imagViewAcceptedRequestMentors"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagViewAcceptedRequestMentors"
+                    app:layout_constraintStart_toEndOf="@+id/imagViewAcceptedRequestMentors"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewInternLeaveDetails"
+            android:layout_width="364dp"
+            android:layout_height="294dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/cardViewLeaveStatusMentors"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/moreLeaves"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/blackColor"
+                android:id="@+id/textViewInternsMoreLeaves"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+               />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewInternsMoreLeaves"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginHorizontal="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewInternsMoreLeaves"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lessLeaves"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/blackColor"
+                android:id="@+id/textViewInternsLessLeaves"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerViewInternsMoreLeaves"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewIntrenLessLeaves"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewInternsLessLeaves"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout >
+
+</ScrollView>

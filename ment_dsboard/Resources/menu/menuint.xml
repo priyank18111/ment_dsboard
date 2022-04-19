@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--For all properties see: https://aka.ms/android-menu-resource-->
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <item
+        android:id="@+id/dashboard"
+        android:showAsAction="always"
+        android:icon ="@drawable/dashboard"
+        android:title="dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <item
+        android:id="@+id/status"
+        android:showAsAction="always"
+        android:icon ="@drawable/leave_status"
+        android:title="status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <item
+        android:id="@+id/profile"
+        android:showAsAction="always"
+        android:icon ="@drawable/profile"
+        android:title="profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</menu>

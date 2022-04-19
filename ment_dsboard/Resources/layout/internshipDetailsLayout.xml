@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="25dp"
+        android:background="@color/bacgroundWhite"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewBack"
+            android:src="@drawable/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/imageViewBack"
+            android:layout_width="match_parent"
+            android:text="@string/Internship_details"
+            android:textColor="@color/colorBlue"
+            android:id="@+id/textViewTitle"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.cardview.widget.CardView
+            android:outlineSpotShadowColor="@android:color/transparent"
+            android:layout_marginTop="40dp"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/cardViewTrainingDuration"
+            android:layout_below="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewTrainingDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_trainingduration"/>
+
+
+                <TextView
+                    android:id="@+id/textViewTrainingDuration"
+                    android:layout_width="wrap_content"
+                    android:text="@string/Training_Duration"
+                    android:layout_toRightOf="@+id/imageViewTrainingDuration"
+                    android:layout_alignTop="@+id/imageViewTrainingDuration"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:id="@+id/textViewFrom"
+                    android:layout_width="wrap_content"
+                    android:text="@string/fromDate"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@+id/imageViewTrainingDuration"
+                    android:layout_below="@+id/textViewTrainingDuration"/>
+
+                <TextView
+                    android:id="@+id/textViewTo"
+                    android:layout_width="wrap_content"
+                    android:text="@string/toDate"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@+id/imageViewTrainingDuration"
+                    android:layout_below="@+id/textViewFrom"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <TextView
+                    android:id="@+id/textViewFromDate"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:text="@string/fromDateDuration"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textViewFrom"
+                    android:layout_below="@+id/textViewTrainingDuration"/>
+
+                <TextView
+                    android:id="@+id/textViewToDate"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/toDateDuration"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textViewTo"
+                    android:layout_below="@+id/textViewFromDate"/>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:outlineSpotShadowColor="@android:color/transparent"
+            app:cardCornerRadius="13dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/cardViewDomain"
+            android:layout_below="@+id/cardViewTrainingDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewDomain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_domain"/>
+
+
+                <TextView
+                    android:id="@+id/textViewDomain"
+                    android:layout_toRightOf="@+id/imageViewDomain"
+                    android:layout_alignTop="@+id/imageViewDomain"
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/Domain"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/textViewDomainName"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:text="@string/domainName"
+                    android:layout_toRightOf="@+id/textViewDomain"
+                    android:layout_alignTop="@+id/textViewDomain"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:outlineSpotShadowColor="@android:color/transparent"
+            app:cardCornerRadius="13dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/cardViewSubDomain"
+            android:layout_below="@+id/cardViewDomain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewSubDomain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_subdomain"/>
+
+
+                <TextView
+                    android:id="@+id/textViewSubDomain"
+                    android:layout_width="wrap_content"
+                    android:text="@string/subdomain"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/imageViewSubDomain"
+                    android:layout_alignTop="@+id/imageViewSubDomain"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    
+                    android:layout_width="wrap_content"
+                    android:text="@string/Business_Analyst"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/textViewSubDomain"
+                    android:layout_alignTop="@+id/textViewSubDomain"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:outlineSpotShadowColor="@android:color/transparent"
+            app:cardCornerRadius="13dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/cardViewMentors"
+            android:layout_below="@+id/cardViewSubDomain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewMentors"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/shape_background_profileicons"
+                    android:src="@drawable/ic_mentors"/>
+
+                <TextView
+                    android:id="@+id/textViewMentor"
+                    android:layout_width="wrap_content"
+                    android:text="@string/mentor"
+                    android:layout_toRightOf="@+id/imageViewMentors"
+                    android:layout_alignTop="@+id/imageViewMentors"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/recycleViewMentorDetails"
+                    android:layout_below="@+id/imageViewMentors"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_height="150dp"/>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>
